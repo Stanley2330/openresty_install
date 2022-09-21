@@ -13,3 +13,8 @@ patch -d build/nginx-1.21.4/ -p 1 < ../ngx_http_proxy_connect_module/patch/proxy
 
 make -j2 
 sudo make install
+
+cp /usr/local/openresty/nginx/conf/nginx.conf ./nginx.conf.bk
+cp nginx.conf /usr/local/openresty/nginx/conf/nginx.conf
+
+
